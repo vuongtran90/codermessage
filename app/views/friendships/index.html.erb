@@ -1,0 +1,7 @@
+
+<% @user.each do |user| %> 
+    <div class="form friend">
+        <span><%= user.friend.username %></span>
+        <%= link_to "-", user, :method => :delete %>
+    </div>
+<% end %>
